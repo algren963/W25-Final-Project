@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Html css new design input fields contact form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    background: linear-gradient(45deg,#ffafbd ,#ffc3a0);
+}
+
+.myForm {
+	width: 1000px;
+	margin: 50px auto;
+	overflow: hidden;
+	padding: 12px;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	box-shadow: 0px 0px 7px rgba(0, 0, 139, 0.32);
+}
+
+.fld {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.fld input[type="text"],input[type="email"],
+input[type="telephone"] {
+	padding: 7px 7px 7px 5px;
+	border: 0;
+	border-radius: 0px;
+	font-size: 14px;
+	width: 100%;
+}
+.fld input[type="text"] {
+	background: url(../imgs/user.png) no-repeat;
+	background-position: 278px 5px;
+	background-size: 20px;
+	background-color: #fff;
+	padding-left: 5px;
+	-webkit-transition: all .25s;
+	   -moz-transition: all .25s;
+	    -ms-transition: all .25s;
+	     -o-transition: all .25s;
+	        transition: all .25s;
+}
+
+.fld input[type="text"]:focus {
+	padding-left: 35px;
+	background-position: 8px 5px;
+}
+
+.fld input[type="email"] {
+	background: url(../imgs/message.png) no-repeat;
+	background-position: 278px 5px;
+	background-size: 20px;
+	background-color: #fff;
+	padding-left: 5px;
+	-webkit-transition: all .25s;
+	   -moz-transition: all .25s;
+	    -ms-transition: all .25s;
+	     -o-transition: all .25s;
+	        transition: all .25s;
+}
+.fld input[type="email"]:focus {
+	background-position: 8px 5px;
+	padding-left: 35px;
+}
+
+.fld input[type="telephone"] {
+	background: url(../imgs/phone.png) no-repeat;
+	background-position: 278px 5px;
+	background-size: 20px;
+	background-color: #fff;
+	padding-left: 5px;
+}
+
+.fld input[type="telephone"]:focus {
+	background-position: 8px 5px;
+	padding-left: 35px;
+	-webkit-transition: all .25s;
+	   -moz-transition: all .25s;
+	    -ms-transition: all .25s;
+	     -o-transition: all .25s;
+	        transition: all .25s;
+}
+
+.myForm #submit_btn {
+	width: 80px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 1px solid #b6bde8;
+	background-color: #f5f5f5;
+	color: #a2a2bf;
+	cursor: pointer;
+	-webkit-transition: all .25s;
+	   -moz-transition: all .25s;
+	    -ms-transition: all .25s;
+	     -o-transition: all .25s;
+	        transition: all .25s;
+}
+.myForm #submit_btn:hover {
+	color: #4f4f4f;
+}
+    </style>
+</head>
+<body>
+
+	
+	<!-- CONTACT FORM -->
+
+	<form action="file:///C:/Users/Admin/Desktop/FINAL%20PROJ%201/service5.html" method="post" class="myForm">
+
+		<div class="fld">
+			<input type="text" name="username" placeholder="First Name" id="username"/>
+			<div id="user_err"></div>	
+        </div>
+        
+        <div class="fld">
+            <input type="text" name="username" placeholder="Last Name" id="username"/>
+            <div id="user_err"></div>	
+            </div>
+
+        <div class="fld">
+            <input type="text" name="username" placeholder="Middle Name" id="username"/>
+             <div id="user_err"></div>	
+                </div>
+        
+		<div class="fld">
+			<input type="email" name="email" placeholder="E-mail" id="email"/>
+			<div id="email_err"></div>
+		</div>
+
+		<div class="fld">
+			<input type="telephone" name="phone" placeholder="Phone Number" id="phone"/>
+			<div id="telephone_err"></div>
+        </div>
+        
+		<div class="fld">
+                <input type="telephone" name="phone" placeholder="House Number" id="phone"/>
+                <div id="telephone_err"></div>
+            </div>
+
+            
+		<div class="fld">
+                <input type="telephone" name="phone" placeholder="Bldg" id="phone"/>
+                <div id="telephone_err"></div>
+            </div>
+
+            
+		<div class="fld">
+                <input type="telephone" name="phone" placeholder="Street" id="phone"/>
+                <div id="telephone_err"></div>
+            </div>
+               
+		<div class="fld">
+                <input type="telephone" name="phone" placeholder="City" id="phone"/>
+                <div id="telephone_err"></div>
+            </div>
+               
+		<div class="fld">
+                <input type="telephone" name="phone" placeholder="Nearest Landmark" id="phone"/>
+                <div id="telephone_err"></div>
+            </div>
+               
+		<div class="fld">
+                <input type="telephone" name="phone" placeholder="Change For" id="phone"/>
+                <div id="telephone_err"></div>
+            </div>
+            
+            
+    
+
+		<input type="submit" id="submit_btn" value="Submit"/>
+
+	</form>
+
+</body>
+</html>

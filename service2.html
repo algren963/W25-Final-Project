@@ -1,0 +1,245 @@
+<html>
+    <head>
+<title>Service</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+       
+    }
+    .container
+    {
+        position: relative;
+        width: 1200px;
+        height: 900px;
+        margin: 80px auto 0;
+        background: linear-gradient(45deg,#ffafbd ,#ffc3a0);
+    }
+    .container .box
+    {
+        position: relative;
+        width: calc(400px - 30px);
+        height: calc(300px - 30px);
+        background: #000;
+        float: left;
+        margin: 15px;
+        box-sizing: border-box;
+        overflow: hidden;
+        box-shadow: 0 5px 10px rgba(0,0,0,.8);
+    }
+    .container .box::before
+    {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        box-sizing: border-box;
+        transition: 0.5s;
+        transform: scaleX(0);
+        opacity: 0;
+        z-index: 1;
+    }
+    .container .box:hover:before
+    {
+         transform: scaleX(1);
+         opacity: 1;
+    }
+    .container .box::after
+    {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        box-sizing: border-box;
+        transition: 0.5s;
+        transform: scaleY(0);
+        opacity: 0;
+        z-index: 1;
+    }
+    .container .box:hover::after
+    {
+         transform: scaleY(1);
+         opacity: 1;
+    }
+    .container .box .imgBox
+    {
+        position: relative;
+    }
+    .container .box .imgBox img
+    {
+        width: 100%;
+        transition: 0.5s;
+    }
+    .container .box:hover .imgBox img
+    {
+        opacity: .2;
+        transform: scale(1.2);
+    }
+    .container .box .content
+    {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+
+    }
+    .container .box .content h1,.click1
+    {
+        margin: 0 0 10px;
+        padding: 0;
+        color:#fff;
+        transition: 0.5s;
+        transform: translateY(-50px);
+        opacity: 0;
+        visibility: hidden;
+        
+    }
+    .container .box .content p
+    {
+        margin: 0;
+        padding: 0;
+        color:#fff;
+        transition: 0.5s;
+        transform: translateY(-50px);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .container .box:hover .content h1,
+    .container .box:hover .content .click1,
+    .container .box .content p
+    {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+        transition-delay: 0.2s;
+    }
+    .click
+    {
+        margin: 0;
+    padding: 0;
+    font-size: 5em;
+    color: #fff;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.2);
+    }
+    .back
+    {
+    margin: 0;
+    padding: 0;
+    font-size: 5em;
+    color:#ffafbd ;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.2);
+   
+    }
+    .click1
+    {
+        margin: 0;
+    padding: 0;
+    font-size: 1em;
+    color:black ;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.2);
+    }
+
+
+
+    </style>
+</head>
+    <body background="black">
+    <h1 class="click"><center><font color='#de6262' > CLICK YOUR CITY!</font></center></h1>
+        <div class="container">
+            <div class="box">
+                <div class="imgBox">
+                    
+                    <img src="https://www.roadaffair.com/wp-content/uploads/2019/10/aerial-view-night-makati-manila-philippines-shutterstock_521867962-1024x683.jpg">
+                </div>
+                <div class="content">
+                    <h1>MANILA</h1>
+                    <button onclick="window.location.href = 'file:///C:/Users/Admin/Desktop/FINAL%20PROJ%201/service3.html';" class="click1"> I'M HERE! </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://cdn.galaxy.tf/unit-media/tc-default/uploads/images/hotel_photo/001/548/207/01-cover-makati-standard.jpg">
+                </div>
+                <div class="content">
+                    <h1>MAKATI</h1>
+                    <button onclick="window.location.href = 'file:///C:/Users/Admin/Desktop/FINAL%20PROJ%201/service3.html';" class="click1"> I'M HERE! </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://www.vigattintourism.com/assets/article_main_photos/optimize/13506406400ejSMlQT.jpg">
+                </div>
+                <div class="content">
+                    <h1>PASIG</h1><button onclick="window.location.href = 'file:///C:/Users/Admin/Desktop/FINAL%20PROJ%201/service3.html';" class="click1"> I'M HERE! </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://www.lamudi.com.ph/journal/wp-content/uploads/2018/04/Quezon_Memorial_City-Wikimedia-Commons-Judgefloro-700x525.jpg">
+                </div>
+                <div class="content">
+                    <h1>QUEZON CITY</h1><button onclick="window.location.href = 'file:///C:/Users/Admin/Desktop/FINAL%20PROJ%201/service3.html';" class="click1"> I'M HERE! </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/Atlanta_Center_-_Aerial_Shot_From_BSA_Twin_Towers_Ortigas_%28Annapolis%2C_Greenhills%2C_San_Juan%3B_2015-05-26%29.jpg">
+                </div>
+                <div class="content">
+                    <h1>SAN JUAN</h1><button onclick="window.location.href = 'file:///C:/Users/Admin/Desktop/FINAL%20PROJ%201/service3.html';" class="click1"> I'M HERE! </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://www.cebutours.ph/wp-content/uploads/2016/11/mactan-shrine.jpg">
+                </div>
+                <div class="content">
+                    <h1>LAPU LAPU CITY</h1><button onclick="window.location.href = 'file:///C:/Users/Admin/Desktop/FINAL%20PROJ%201/service3.html';" class="click1"> I'M HERE! </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://media.philstar.com/images/the-philippine-star/lifestyle/travel-and-tourism/20181005/The-Ruins-architecture-heritage-best-things-to-do-in-Bacolod-City.jpg">
+                </div>
+                <div class="content">
+                    <h1>BACOLOD</h1><button onclick="window.location.href = 'file:///C:/Users/Admin/Desktop/FINAL%20PROJ%201/service3.html';" class="click1"> I'M HERE! </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://travelphilippines.net/wp-content/uploads/2018/07/Davao-Pearl-Farm.jpg">
+                </div>
+                <div class="content">
+                    <h1>DAVAO CITY</h1><button onclick="window.location.href = 'file:///C:/Users/Admin/Desktop/FINAL%20PROJ%201/service3.html';" class="click1"> I'M HERE! </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="https://boyplakwatsa.files.wordpress.com/2014/01/batangas-funmeet-jan-11-2014-010.jpg">
+                </div>
+                <div class="content">
+                    <h1>LIPA CITY</h1><button onclick="window.location.href = 'file:///C:/Users/Admin/Desktop/FINAL%20PROJ%201/service3.html';" class="click1"> I'M HERE! </button>
+                </div>
+            </div>
+
+        </div>
+        <button onclick="window.location.href = 'file:///C:/Users/Admin/Desktop/FINAL%20PROJ%201/home.html';" class="back"> 🡄BACK🡄 </button>
+    </body>
+</html>
