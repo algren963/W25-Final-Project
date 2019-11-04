@@ -1,0 +1,81 @@
+<html>
+    <head>
+<meta charset="utf-8">
+<title>Introduction</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333;
+    font-family: 'Poppins', sans-serif;
+}
+h1
+{
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+h1 span
+{
+    display: inline-flex;
+    color: #ffb88c;
+    
+}
+h1 span:nth-child(even)
+{
+overflow: hidden;
+transition: ease-in-out 0.5s;
+color: #fff;
+border-bottom: 8px solid #de6262;
+letter-spacing: -1em;
+}
+h1:hover span:nth-child(even)
+{
+    letter-spacing: 0;
+}
+
+h1:hover span:nth-child(2)
+{
+    transition-delay: 0s;
+}
+h1:hover span:nth-child(4)
+{
+    transition-delay: 0.5s;
+}
+h1:hover span:nth-child(6)
+{
+    transition-delay: 1s;
+}
+.back
+    {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    color:#de6262 ;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.2);
+   
+    }
+</style>
+    </head>
+    <body>
+        <h1>
+                <span>S</span><span>amgyup</span>
+                <span>S</span><span>a</span>
+                <span>B</span><span>ahay</span>
+                <button onclick="window.location.href = 
+        'home.html';"
+         class="back"> LET'S GO! </button>
+
+        </h1>
+        
+        
+    </body>
+</html>
